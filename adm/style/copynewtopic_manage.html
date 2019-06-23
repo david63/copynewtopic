@@ -1,0 +1,49 @@
+{% include '@' ~ NAMESPACE ~ '/head_panel.html' %}
+
+<form id="copynewtopic" method="post" action="{{ U_ACTION }}">
+	<fieldset>
+		<legend>{{ lang('COPY_NEW_TOPIC_OPTIONS') }}</legend>
+
+		<dl>
+			<dt><label for="copy_topic_enable">{{ lang('COPY_TOPIC_ENABLE') }}{{ lang('COLON') }}</label><br><span>{{ lang('COPY_TOPIC_ENABLE_EXPLAIN') }}</span></dt>
+			<dd>
+				<input type="radio" id="copy_topic_enable1" name="copy_topic_enable" value="1"{% if COPY_NEW_TOPIC_ENABLE %} checked="checked"{% endif %} />
+				<label class="set" for="copy_topic_enable1">{{ lang('ENABLE') }}</label>
+				<input type="radio" id="copy_topic_enable0" name="copy_topic_enable" value="0"{% if not COPY_NEW_TOPIC_ENABLE %} checked="checked"{% endif %} />
+				<label class="unset" for="copy_topic_enable0">{{ lang('DISABLE') }}</label>
+			</dd>
+		</dl>
+
+		<dl>
+	    	<dt><label for="copy_topic_from_forum">{{ lang('COPY_TOPIC_FROM_FORUM') }}{{ lang('COLON') }}</label><br><span>{{ lang('COPY_TOPIC_FROM_FORUM_EXPLAIN') }}</span></dt>
+	    	<dd><select id="copy_topic_from_forum" name="copy_topic_from_forum">{{ COPY_TOPIC_FROM_FORUM }}</select></dd>
+		</dl>
+
+		<dl>
+	    	<dt><label for="copy_topic_to_forum">{{ lang('COPY_TOPIC_TO_FORUM') }}{{ lang('COLON') }}</label><br><span>{{ lang('COPY_TOPIC_TO_FORUM_EXPLAIN') }}</span></dt>
+	    	<dd><select id="copy_topic_to_forum" name="copy_topic_to_forum">{{ COPY_TOPIC_TO_FORUM }}</select></dd>
+		</dl>
+
+		<dl>
+			<dt><label for="copy_topic_count_override">{{ lang('COPY_TOPIC_OVERRIDE_COUNT') }}{{ lang('COLON') }}</label><br><span>{{ lang('COPY_TOPIC_OVERRIDE_COUNT_EXPLAIN') }}</span></dt>
+			<dd>
+				<input type="radio" id="copy_topic_count_override1" name="copy_topic_count_override" value="1"{% if COPY_NEW_TOPIC_OVERRIDE %} checked="checked"{% endif %} />
+				<label class="set" for="copy_topic_count_override1">{{ lang('YES') }}</label>
+				<input type="radio" id="copy_topic_count_override0" name="copy_topic_count_override" value="0"{% if not COPY_NEW_TOPIC_OVERRIDE %} checked="checked"{% endif %} />
+				<label class="unset" for="ccopy_topic_count_override0">{{ lang('NO') }}</label>
+			</dd>
+		</dl>
+	</fieldset>
+
+	<fieldset>
+		<legend>{{ lang('ACP_SUBMIT_CHANGES') }}</legend>
+		<p class="submit-buttons">
+			<input class="adm-button" type="submit" id="submit" name="submit" value="{{ lang('SUBMIT') }}" />&nbsp;
+			<input class="adm-button" type="reset" id="reset" name="reset" value="{{ lang('RESET') }}" />
+		</p>
+		{{ S_FORM_TOKEN }}
+	</fieldset>
+
+</form>
+
+{% include '@' ~ NAMESPACE ~ '/donate.html' %}

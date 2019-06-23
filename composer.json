@@ -1,0 +1,35 @@
+{
+	"name": "david63/copynewtopic",
+	"type": "phpbb-extension",
+	"description": "Copies a new topic from a specified forum to another forum.",
+	"version": "2.1.0-RC1",
+	"time": "2017-01-23",
+	"keywords": [
+		"phpbb",
+		"extension",
+		"topic",
+		"copy"
+	],
+	"license": "GPL-2.0-only",
+	"authors": [
+		{
+			"name": "David Wood",
+			"role": "Developer"
+        }
+    ],
+	"require": {
+        "php": ">=5.4",
+        "composer/installers": "~1.0"
+    },
+	"extra": {
+		"display-name": "[*] Copy new topic",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.2.0"
+		},
+		"version-check": {
+        	"host": "version.phpbbdev.space",
+        	"directory": "/3.2",
+        	"filename": "/copy_new_topic_version_file.json"
+    	}
+	}
+}
