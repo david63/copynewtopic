@@ -3,7 +3,7 @@
 *
 * @package Cookie Policy Extension
 * @copyright (c) 2014 david63
-* * @license GNU General Public License, version 2 (GPL-2.0)
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
 */
 
@@ -50,19 +50,4 @@ $lang = array_merge($lang, array(
 
 	'ENABLE_INVALID'					=> 'There must be a valid entry in both the “from” and “to” forums when enabling this extension.',
 	'FORUMS_INVALID'					=> 'The “from” and “to” forums cannot be the same.',
-
-	'NEW_VERSION'						=> 'New Version',
-	'NEW_VERSION_EXPLAIN'				=> 'There is a newer version of this extension available.',
-
-	'VERSION'							=> 'Version',
-));
-
-// Donate
-$lang = array_merge($lang, array(
-	'DONATE'					=> 'Donate',
-	'DONATE_EXTENSIONS'			=> 'Donate to my extensions',
-	'DONATE_EXTENSIONS_EXPLAIN'	=> 'This extension, as with all of my extensions, is totally free of charge. If you have benefited from using it then please consider making a donation by clicking the PayPal donation button opposite - I would appreciate it. I promise that there will be no spam nor requests for further donations, although they would always be welcome.',
-
-	'PAYPAL_BUTTON'				=> 'Donate with PayPal button',
-	'PAYPAL_TITLE'				=> 'PayPal - The safer, easier way to pay online!',
 ));

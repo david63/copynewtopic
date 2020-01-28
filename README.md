@@ -7,6 +7,7 @@ Copies a new topic from a specified forum to another forum.
 [![Latest Stable Version](https://poser.pugx.org/david63/copynewtopic/v/stable)](https://packagist.org/packages/david63/copynewtopic)
 [![Latest Unstable Version](https://poser.pugx.org/david63/copynewtopic/v/unstable)](https://packagist.org/packages/david63/copynewtopic)
 [![Total Downloads](https://poser.pugx.org/david63/copynewtopic/downloads)](https://packagist.org/packages/david63/copynewtopic)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/905ee90fee2a4176b901184e93eeb731)](https://www.codacy.com/manual/david63/copynewtopic?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=david63/copynewtopic&amp;utm_campaign=Badge_Grade)
 
 ## Minimum Requirements
 * phpBB 3.2.0
