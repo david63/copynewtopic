@@ -24,3 +24,6 @@ services:
         class: david63\copynewtopic\core\functions
         arguments:
             - '@ext.manager'
+
+    _defaults:
+        public: true
